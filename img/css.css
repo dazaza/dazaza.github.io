@@ -1,0 +1,124 @@
+/* >1200px的屏幕下设定 */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+/* 顶部宽度为full-screen */
+
+#my_header {
+    width: auto;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+#my_nav {
+
+}
+
+#my_content {
+    margin-top: 30px;
+}
+
+
+/* 页面大标题 */
+h1 {
+    margin-bottom: 20px;
+}
+
+.my_page_title {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.my_section_title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#my_footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* list_item  */
+
+.my_story_list_item {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+.my_tag {
+    margin-right: 5px;
+}
+.item_title a {
+    font-size: 20px;
+}
+.item_title_en a {
+    font-size: 16px;
+    color: gray;
+}
+.item_title_en span {
+    font-size: 13px;
+    color: gray;
+    margin-left: 3px;
+}
+.my_story_list_item_desc {
+    margin-top: 9px;
+}
+.my_item_tag_container {
+    margin-top: 15px;
+}
+.my_item_tag_container a{
+    font-size: 14px;
+}
+.my_story_img_thumb {
+    margin-top: 9px;
+    margin-left: 15px;
+    text-align: center;
+}
+.my_story_list_date {
+    font-size: 11px;
+    color:gray;
+}
+
+.my_object_year {
+    font-size: 70%;
+    color: gray;
+}
+
+
+.my_list_object_title {
+    margin-bottom: 15px;
+}
+
+/* story page */
+.story_page_pub_time {
+    margin-bottom: 30px;
+}
+.sotry_link {
+    margin-top: 20px;
+}
+.story_tags {
+    margin-top: 30px;
+}
+.story_img_container {
+    text-align: center;
+}
+.story_img_container img {
+    margin-bottom: 15px;
+}
+.story_share_this {
+    text-align: center;
+}
+.page_narrow {
+
+}
+.page_content {
+    font-size:16px;
+    line-height: 1.6;
+}
