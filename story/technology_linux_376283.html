@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>调整Ubuntu 10.10启动菜单等待时间</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="/img/css.css?random="><link data-rh="true" rel="icon" href="/img/favicon.ico"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067137220025946"
+     crossorigin="anonymous"></script>
+</head><body><div id="my_header"><div class="container"><nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="/"><img alt="diglog" src="/img/logo.v1.gif" class="rounded-sm"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavAltMarkup"><div class="navbar-nav"></div></div></nav></div></div><div class="container"><div id="my_content"><div id="myga-top-1">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067137220025946"
+                crossorigin="anonymous"></script>
+            <!-- hor_page_top -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6067137220025946"
+                data-ad-slot="9055428599"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            </div><h1 class="page_narrow">调整Ubuntu 10.10启动菜单等待时间</h1><div class="row"><div class="col-lg-12 col-12"><div class="my_story_list_item shadow p-3 mb-5 bg-white rounded"><div class="story_page_pub_time page_narrow">by <a href="/user/xjyzhenai/">xjyzhenai</a> on 2010-12-28 20:23:44</div><div class="story_img_container"><a href="http://img.diglog.com/img/2010/12/3f55626bd6ed43f799147f487cf21eeb.png"><img src="http://img.diglog.com/img/2010/12/3f55626bd6ed43f799147f487cf21eeb.png" class="img-fluid my_story_img" onerror="this.style.display='none'"></a></div><div class="page_narrow text-break page_content"><p class="myga-story-1">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067137220025946"
+                crossorigin="anonymous"></script>
+            <!-- square_story_page_1 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6067137220025946"
+                data-ad-slot="6429265258"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+            </p><p>曾经为大家介绍过，通过修改/boot/grub/menu.lst文件来改变与Windows的启动顺序。不过这是基于Linux优先引导的。如果是Windows使用的MBR优先引导系统，那么问题就简单了。Windows提供了可视化的管理菜单来指定默认的操作系统来引导你的电脑。</p><p></p><p>　　在Ubuntu 10.10的启动菜单（已经由Ubuntu引导系统），会停留多个选项，主要是内核的选择。而默认的等待时间为10秒。进入到桌面后并没有看到有什么程序可以管理这个等待时间的选项，于是我们通过gedit来搞定启动菜单的等待时间。</p><p></p><p>　　按Ctrl+Alt+t组合键打开终端，输入：</p><p></p><p>sudo gedit /etc/default/grub</p><p></p><p>　　然后输入管理员密码。</p><p></p><p>　　大约在第七行可以看到代码为：GRUB_TIMEOUT=10</p><p></p><p>　　这个就是GRUB引导停留时间的选项了。把后面的10改为你想获得的值吧。单位是秒。</p><p></p><p>image</p><p>  </p><p>Technorati 标签: ubuntu,linux,启动</p></div><div id="story_share_this"><div class="sharethis-inline-share-buttons"></div></div><div class="story_tags page_narrow"><button type="button" class="btn btn-light my_tag"><a href="/tag/windows/">#windows</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/管理员/">#管理员</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/操作系统/">#操作系统</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/linux/">#linux</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/ubuntu/">#ubuntu</a></button></div></div></div></div><div id="my_footer"><div class=""><a href="/tags/">tags</a>&nbsp;<a href="/users/">users</a></div>&copy;2005-2099 diglog.com </div></div></body></html>

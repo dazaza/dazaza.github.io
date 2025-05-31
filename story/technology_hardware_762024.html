@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>树莓派(Respberry Pi)USB无线网卡配置方法</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="/img/css.css?random="><link data-rh="true" rel="icon" href="/img/favicon.ico"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067137220025946"
+     crossorigin="anonymous"></script>
+</head><body><div id="my_header"><div class="container"><nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="/"><img alt="diglog" src="/img/logo.v1.gif" class="rounded-sm"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavAltMarkup"><div class="navbar-nav"></div></div></nav></div></div><div class="container"><div id="my_content"><div id="myga-top-1">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067137220025946"
+                crossorigin="anonymous"></script>
+            <!-- hor_page_top -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6067137220025946"
+                data-ad-slot="9055428599"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            </div><h1 class="page_narrow">树莓派(Respberry Pi)USB无线网卡配置方法</h1><div class="row"><div class="col-lg-12 col-12"><div class="my_story_list_item shadow p-3 mb-5 bg-white rounded"><div class="story_page_pub_time page_narrow">by <a href="/user/geekzhang/">geekzhang</a> on 2013-06-30 18:45:25</div><div class="story_img_container"><a href="http://img.diglog.com/img/2013/6/77f07e09-d59a-4a35-8d5c-f307256a9b36.jpg"><img src="http://img.diglog.com/img/2013/6/77f07e09-d59a-4a35-8d5c-f307256a9b36.jpg" class="img-fluid my_story_img" onerror="this.style.display='none'"></a></div><div class="page_narrow text-break page_content"><p class="myga-story-1">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067137220025946"
+                crossorigin="anonymous"></script>
+            <!-- square_story_page_1 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6067137220025946"
+                data-ad-slot="6429265258"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+            </p><p>Raspberry Pi(中文名为“树莓派”,简写为RPi)是为学生计算机编程教育而设计，只有信用卡 大小的卡片式电脑，其系统基于Linux。安装过程请搜索相关文章，如果你使用了 USB Mini 无线网卡，可参考下面的配置方法。</p><p></p><p>本人的USB无线网卡采用的是：EDUP EP-N8508GS，售价29元。如果你采用DHCP方式动态获取IP地址不成功的话，可参考下面的方法。</p><p></p><p>使用 lsusb 命令查看有无usb wifi 芯片；</p><p>使用 iwlist wlan0 scan 扫描无线网络；</p><p>配置 sudo nano /etc/network/interfaces，如下：</p><p>auto lo</p><p></p><p>iface lo inet loopback</p><p>iface eth0 inet dhcp</p><p></p><p># static ip</p><p>auto wlan0</p><p>allow-hotup wlan0</p><p>iface wlan0 inet static</p><p>address 192.168.1.239</p><p>getway 192.168.1.1</p><p>wpa-ssid "你的SSID"</p><p>wpa-psk  "你的WIFI密码"</p><p># route</p><p>up route add default gw 192.168.1.1</p><p>down route del default gw 192.168.1.1</p><p>重启即可。</p><p></p><p>树莓派官网：http://www.raspberrypi.org/</p><p>树莓派介绍：http://zh.wikipedia.org/zh-cn/%E6%A0%91%E8%8E%93%E6%B4%BE</p><p>友情推荐淘宝店：http://item.taobao.com/item.htm?id=17342970994</p></div><div id="story_share_this"><div class="sharethis-inline-share-buttons"></div></div><div class="story_tags page_narrow"><button type="button" class="btn btn-light my_tag"><a href="/tag/树莓派/">#树莓派</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/无线网卡/">#无线网卡</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/配置/">#配置</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/usb/">#usb</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/wifi/">#wifi</a></button><button type="button" class="btn btn-light my_tag"><a href="/tag/linux/">#linux</a></button></div></div></div></div><div id="my_footer"><div class=""><a href="/tags/">tags</a>&nbsp;<a href="/users/">users</a></div>&copy;2005-2099 diglog.com </div></div></body></html>
