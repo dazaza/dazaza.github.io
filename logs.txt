@@ -1,0 +1,33 @@
+
+========== 20250505
+手动build部署ok
+
+========== 20250504
+System.IO.IOException: No space left on device : '/home/runner/runners/2.323.0/_diag/Worker_20250503-214352-utc.log'
+   at System.IO.RandomAccess.WriteAtOffset(SafeFileHandle handle, ReadOnlySpan`1 buffer, Int64 fileOffset)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.Diagnostics.TextWriterTraceListener.Flush()
+   at GitHub.Runner.Common.HostTraceListener.WriteHeader(String source, TraceEventType eventType, Int32 id)
+   at System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   at GitHub.Runner.Worker.Worker.RunAsync(String pipeIn, String pipeOut)
+   at GitHub.Runner.Worker.Program.MainAsync(IHostContext context, String[] args)
+System.IO.IOException: No space left on device : '/home/runner/runners/2.323.0/_diag/Worker_20250503-214352-utc.log'
+   at System.IO.RandomAccess.WriteAtOffset(SafeFileHandle handle, ReadOnlySpan`1 buffer, Int64 fileOffset)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.Diagnostics.TextWriterTraceListener.Flush()
+   at GitHub.Runner.Common.HostTraceListener.WriteHeader(String source, TraceEventType eventType, Int32 id)
+   at System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)
+   at GitHub.Runner.Common.Tracing.Error(Exception exception)
+   at GitHub.Runner.Worker.Program.MainAsync(IHostContext context, String[] args)
+Unhandled exception. System.IO.IOException: No space left on device : '/home/runner/runners/2.323.0/_diag/Worker_20250503-214352-utc.log'
+   at System.IO.RandomAccess.WriteAtOffset(SafeFileHandle handle, ReadOnlySpan`1 buffer, Int64 fileOffset)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.Diagnostics.TextWriterTraceListener.Flush()
+   at System.Diagnostics.TraceSource.Flush()
+   at GitHub.Runner.Common.Tracing.Dispose(Boolean disposing)
+   at GitHub.Runner.Common.Tracing.Dispose()
+   at GitHub.Runner.Common.TraceManager.Dispose(Boolean disposing)
+   at GitHub.Runner.Common.TraceManager.Dispose()
+   at GitHub.Runner.Common.HostContext.Dispose(Boolean disposing)
+   at GitHub.Runner.Common.HostContext.Dispose()
+   at GitHub.Runner.Worker.Program.Main(String[] args)
